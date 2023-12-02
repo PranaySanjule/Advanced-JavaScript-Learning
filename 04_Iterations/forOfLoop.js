@@ -178,7 +178,6 @@ const myMap = new Map();
 myMap.set('user1', 'John');
 myMap.set('user2', 'Steve');
 
-myMap.
 
 // Que: Print key of map only
 for (const key of map) {    // won't work
