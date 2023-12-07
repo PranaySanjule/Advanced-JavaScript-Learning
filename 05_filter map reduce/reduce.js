@@ -5,7 +5,7 @@
 
 // Syntax:
 // reduce((accumulator, currentVal, currentIndex, array) => {
-    // condition
+//     condition
 // }, initialVal)
 
 // Example 1 : Return the sum of array
