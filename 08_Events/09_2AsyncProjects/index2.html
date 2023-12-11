@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Projects with Chai Aur Code</title>
+  </head>
+  <body>
+    <h1>Chai Aur Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // const sayDate = function (str) {
+    //   console.log(str, Date.now());
+    // };
+
+    // setInterval() method
+    // const intervalId = setInterval(sayDate, 1000, "Hii");
+
+    // clearInterval() method
+    // clearInterval(intervalId);
+
+
+    // Task : click start button to start the interval and click stop button to stop the interval
+    const h1 = document.querySelector("h1");
+    const start = document.querySelector("#start")
+    const stop = document.querySelector("#stop")
+
+    const sayDate = function(str){
+      console.log(str, Date.now());
+      h1.innerHTML = `${str} : ${Date.now()}`;
+    }
+
+    let intervalId;
+
+    start.addEventListener('click', function(e){
+      intervalId = setInterval(sayDate, 1000, "Hii");
+
+    })
+
+    stop.addEventListener('click', function(e){
+      clearInterval(intervalId);
+    })
+
+  </script>
+</html>

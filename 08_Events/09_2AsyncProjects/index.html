@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Projects with Chai Aur Code</title>
+  </head>
+  <body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // <========######========>
+
+    // 1. setTimeout() method: Runs only once after given time
+    // setTimeout(function () {
+    //   console.log("Hello World!");
+    // }, 2000); // two parameters: handler and timeout value
+
+    // const sayHii = function () {
+    //   console.log("Hii");
+    // };
+
+    // setTimeout(sayHii, 5000); // after 5 sec
+
+    // <========######========>
+
+    // 2. clearTimeout() method: Stop setTimeout() event
+    const changeText = function () {
+      document.querySelector("h1").innerHTML =
+        "Best JavaScript Series by HITESH CHAUDHARY SIR";
+    };
+
+    const changeMe = (changeText, 2000);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changeMe);
+      console.log("STOPPED");
+    });
+
+    // <========######========>
+  </script>
+</html>
