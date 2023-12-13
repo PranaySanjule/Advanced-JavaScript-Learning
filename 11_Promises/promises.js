@@ -61,7 +61,7 @@ promiseFour.then((user) => {
 // Use of async await
 const promiseFive = new Promise(function (resolve, reject) {
         setTimeout(function () {
-          let error = true;
+          let error = false;
           if (!error) {
             resolve({ username: "hitesh", password: "1234" });
           } else {
@@ -82,31 +82,31 @@ async function consumePromiseFive() {
 consumePromiseFive()
 
 // example to fetch data
-// async function getAllUsers() {
-//     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users');
-//         console.log(response);
-//         const data = await response.json();   // response is in STRING so convert it in JSON
-//         console.log(data);
-//     } catch (error) {
-//         // console.log("Err: ", error);
-//         console.log(`Err: ${error}`);
-//     }
-// }
+async function getAllUsers() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        console.log(response);
+        const data = await response.json();   // response is in STRING so convert it in JSON
+        console.log(data.email);   
+    } catch (error) {
+        // console.log("Err: ", error);
+        console.log(`Err: ${error}`);
+    }
+}
 
-// getAllUsers()
+getAllUsers()
 
             // OR
 
 //Above same method fetch data but using .then .catch 
-fetch('https://jsonplaceholder.typicode.com/users')
-.then((response) => {
-    return response.json();
-})
-.then((data) => {
-    console.log(data);    
-})
-.catch((error) => console.log(error))
+// fetch('https://jsonplaceholder.typicode.com/users')
+// .then((response) => {
+//     return response.json();
+// })
+// .then((data) => {
+//     console.log(data);    
+// })
+// .catch((error) => console.log(error))
 
 
 //Note:
