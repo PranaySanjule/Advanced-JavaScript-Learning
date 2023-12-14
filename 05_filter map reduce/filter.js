@@ -13,11 +13,10 @@
 
 // });
 
-
 // Example 1 : filter even number
 const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const res = arr1.filter((num) => num % 2 == 0); // Iplicit scope (not use of {} and return keyword)
+const res = arr1.filter((num) => num % 2 == 0); // Implicit scope (not use of {} and return keyword)
 
 // console.log(res);   // output: [ 2, 4, 6, 8, 10 ]
 
@@ -53,7 +52,7 @@ const moreThanTwo = arr2.filter((arrayElement, index, actualArray) => {
 
 // console.log(moreThanTwo);
 
-// Example 3 : 
+// Example 3 :
 let students = [
   { name: "Piyush", rollNumber: 31, marks: 80 },
   { name: "Jenny", rollNumber: 15, marks: 69 },
@@ -130,10 +129,9 @@ const data = [
 let result = data.filter((book) => book.genre === "Mythology"); //Implicit Scope
 // console.log(result);
 
-
 result = data.filter((book) => {
-    return book.publishDate > 2015 && book.genre === "Mythology";  //Explicit Scope
-})
+  return book.publishDate > 2015 && book.genre === "Mythology"; //Explicit Scope
+});
 // console.log(result);
 
 result = data.filter((book) => {
