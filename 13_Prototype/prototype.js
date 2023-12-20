@@ -31,7 +31,7 @@ Array.prototype.heyHitesh = function(){
 // myHeros.heyHitesh()
 // heroPower.heyHitesh()
 
-// inheritance
+// prototypal inheritance
 
 const User = {
     name: "chai",
