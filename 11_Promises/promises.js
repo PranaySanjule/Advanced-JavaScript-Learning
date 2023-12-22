@@ -111,4 +111,4 @@ getAllUsers()
 
 //Note:
 // Why response in output coming first and then print console.log statement (checkout output)
-// Above question ans in next video
+// Above question ans in next video 
