@@ -1,7 +1,7 @@
 //steps to tackle logic
 // step 1: take randomNum variable
 // step 2: take all constant variable submit, userInput, guessSlot, remaining, lowOrHi, startOver
-// step 3: define funcitons validateGuess, checkGuess, displayGuess, displayMessage, endGame, newGame
+// step 3: define functions validateGuess, checkGuess, displayGuess, displayMessage, endGame, newGame
 // step 4: let playGame = true, let prevGuess = [] and let numGuess = 1
 // step 5: addEventListener on submit if playGame = true
 
