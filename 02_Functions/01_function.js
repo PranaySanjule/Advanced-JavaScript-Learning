@@ -87,9 +87,9 @@ function calculateTotalCartPrice(val1, val2, ...num) {
   return num;
 }
 
-// console.log(calculateTotalCartPrice(100, 200, 300, 400));  // output: 100 (without rest operator)
-// console.log(calculateTotalCartPrice(100, 200, 300, 400));  // output: [ 100, 200, 300, 400 ]
-console.log(calculateTotalCartPrice(100, 200, 300, 400)); // output: [300, 400] (with val1, val2)
+// console.log(calculateTotalCartPrice(100, 200, 300, 400));  // output: 100 (without rest operator) calculateTotalCartPrice(num) return num
+// console.log(calculateTotalCartPrice(100, 200, 300, 400));  // output: [ 100, 200, 300, 400 ]  calculateTotalCartPrice(...num) return num
+console.log(calculateTotalCartPrice(100, 200, 300, 400)); // output: [300, 400] (with val1, val2)   calculateTotalCartPrice(val1, val2, ...num) return num
 // val1 = 100, val2 = 200, ...num = [300, 400]
 
 
