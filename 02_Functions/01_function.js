@@ -110,7 +110,7 @@ function handleObject(anyobject) {
 
 handleObject(user);
 
-//pass object directy
+//pass object directly
 handleObject({
   username: "John Doe",
   age: "25",
